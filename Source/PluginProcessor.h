@@ -88,7 +88,6 @@ private:
 
     MonoChain leftChain, rightChain;
 
-
     enum ChainPositions {
 
         LowCut,
@@ -112,8 +111,6 @@ private:
         const CoefficientType& coefficients,
         const Slope& Slope)
     {
-
-        
 
         chain.template setBypassed<0>(true);
         chain.template setBypassed<1>(true);
@@ -144,7 +141,7 @@ private:
     }
 
     void updateLowCutFilters(const ChainSettings& chainSettings);
-    void updateHighCutFilters(const ChainSettings& chainSettings);
+    void updateHighCutFilters(const ChainSettings& chainSettings); 
 
     void updateFilters();
 
